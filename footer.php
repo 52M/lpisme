@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-	<div id="footer">
+	<div id="footer" class="cf">
 		<div class="social-wrapper">
 		<?php if ($this->options->socialgithub): ?>
 			<a class="social github" target="blank" href="<?php $this->options->socialgithub(); ?>">
@@ -27,7 +27,7 @@
 		<?php endif; ?>
 		</div>
 		<div>
-			Theme is <span class="codename">Lpisme</span> by Chakhsu / Powered by <a href="http://www.typecho.org" target="_blank">Typecho</a>
+			Theme is <span class="codename">Lpisme</span> by <a href="https://www.linpx.com" target="_blank">Chakhsu</a> / Powered by <a href="http://www.typecho.org" target="_blank">Typecho</a>
 		</div>
 		<div>
 			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>
@@ -36,9 +36,11 @@
 	<?php $this->footer(); ?>
 
 	<script src="<?php $this->options->themeUrl('js/functions.js'); ?>"></script>
+	<?php if(!empty($this->options->search_form) && in_array('Pjax', $this->options->search_form)): ?>
+
 	<script src="<?php $this->options->themeUrl('js/prism.js'); ?>" data-no-instant></script>
 	<script src="<?php $this->options->themeUrl('js/instantclick.min.js'); ?>" data-no-instant></script>
-	<script>
+	<script data-no-instant>
 	//Here is for Google Analytics.
 	</script>
 	<script data-no-instant>
@@ -50,5 +52,10 @@
 	});
 	InstantClick.init();
 	</script>
+	<?php else : ?>
+
+	<script src="<?php $this->options->themeUrl('js/prism.js'); ?>" ></script>
+	<?php endif; ?>
+	
 	</body>
 </html>

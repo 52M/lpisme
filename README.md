@@ -1,14 +1,52 @@
+####更新（2016年3月15日21:34:59）
+
+ - 增加外观后台设置是否开启Pjax选项，使用了cloudflare的cdn加速服务的不需要勾选
+
+另外，主题评论已经内置了te的垃圾评论过滤的相关js，需要设置-评论，去掉开启垃圾评论过滤功能，不然原生评论无法生效···
+
+####更新（2016年3月14日00:05:57）
+
+根据网友和使用者的要求更新了很多细节，例如
+
+ - 增加了文章自定义字段 thumb ，后面跟着的值带上你的图片URL，需要含http(s)://
+ - 文章缩略图的优先级顺序变为 自定义字段thumb -> 附件第一张图片 -> 文章图片 -> 默认缩略图 -> 无
+ - 由原来的列更新换成行更新
+ - 主题样式style.css细节修改
+ - 更多变化等你去发现···
+
+####更新（2016年3月6日09:15:17）
+
+更新内容：
+ - prismjs加入了对vim的代码高亮
+ - 首页由原来的列更新换成行更新
+ - 首页分页由数字分页变成上下页分页
+ - 样式调整
+ - 其他改变等你去发现···
+
+
 ###Lpisme，Typecho主题
 
 Lpisme是Typecho的一套主题模板，Lpisme这个主题的名字由来，Lp是我女朋友的名字的首个字母，没错我女朋友的名字只有两个字。So，很容易看出，Lp is me。一开始是打算起Lpismine，但太长了同时觉得还是要有点chinese的感觉，故Lpisme诞生，意味着女朋友是我的。
 
-Lpisme主题从2016年1月22日开始制作，一直迭代升级到现在的3.1.0版本，更多版本详情可以浏览：https://github.com/loozx/lpisme-version
+Lpisme主题从2016年1月22日开始制作，一直迭代升级到现在的3.1.0版本
+
+更多版本详情可以浏览：
+
+https://github.com/loozx/lpisme-version
+
+下载地址：
+
+https://github.com/loozx/lpisme
+
+主题预览为本站：
+
+https://www.linpx.com
 
 ####主题亮点
 
 先上图片 ，更多预留点击 [www.linpx.com/](https://www.linpx.com/)
 
-![](http://ww3.sinaimg.cn/large/7c98397dgw1f1e3fwub1bj20st0kp452.jpg)
+![](http://ww4.sinaimg.cn/large/7c98397dgw1f1fj3721ajj20ps0huwhw.jpg)
 
  - 无jQuery，无前端框架，轻量级
  - InstantClick实现PJAX无刷新操作
